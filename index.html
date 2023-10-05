@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/estilos.css">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./styles/estilos.css">
+
+    <!-- Google Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJ5K3D5E29"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HJ5K3D5E29');
+    </script>
+
+    <!-- Titulo -->
+    <title>Entrada YA!</title>
+</head>
+  
+<body class="gridfull">
+    <header id="arriba"> 
+        <nav id="nav" class="flex justevenly widp100">
+
+            <!-- Logo -->
+            <div class="flex justbetween falitcenter">
+                <img id="logo-header" src="./multimedia/logo-header.png" alt="Logo de la empresa">   
+            </div>
+            
+            <!-- Buscador -->
+            <div id="busdrop" class="flex falitcenter just">
+                <input class="buscador" type="text" placeholder="Buscar...">
+                <button class="boton-buscador">Buscar</button>
+
+                <!-- Categorias -->
+                <select id="cat-hd" class="marleft10 select135" name="Categorias">
+                    <option value="Categoria1">Categorias</option>
+                    <option value="Categoria2">Stand up</option>
+                    <option value="Categoria3">Concierto</option>
+                    <option value="Categoria4">Recreacion</option>
+                    <option value="Categoria5">Comedia</option>
+                </select>    
+                <!-- Menu hamburgesa -->
+                <div class="dropdown">                                    
+                    <a data-bs-toggle="dropdown" ><img class="menu-1200" src="./multimedia/iconos/menu.svg" alt="menu"></a>                  
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item text-center" href="./pages/login.html">Iniciar Sesion</a></li>
+                          <li><a class="dropdown-item text-center" href="./pages/registro.html">Registrate</a></li>
+                        </ul>
+                </div>
+            </div>            
+
+            <!-- Login -->
+            <div id="log" class="flex falitcenter">
+                <a class="marright10" href="./pages/login.html"><button class="botonlog">Iniciar sesion</button></a>
+                <a href="./pages/registro.html"><button class="botonreg">Registrate</button></a>
+            </div>
+        </nav>
+    </header> 
+
+    <main class="flex fdircolum">
+        <!-- Carrusel -->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img class="d-block w-100" src="./multimedia/baner1.png" alt="baner1">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img class="d-block w-100" src="./multimedia/baner2.jpg" alt="baner2">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img class="d-block w-100" src="./multimedia/baner3.jpg" alt="baner3">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img class="d-block w-100" src="./multimedia/baner4.jpg" alt="baner4">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Todos los eventos -->
+        <div class="division marbott25 martop25"></div>
+        <div id="tde" class="flex fdirrow justbetween marbott25">
+            <h2 class="bordeiz100 texblanco fw-bold fs-3">Todos los Eventos</h2>
+            <select class="bordedr100 select135" name="Categorias">
+                <option value="Categoria1">Comedia</option>  
+                <option value="Categoria2">Stand up</option> 
+                <option value="Categoria3">Concierto</option>
+                <option value="Categoria4">Recreacion</option>
+            </select>
+        </div>
+        <!-- Card de eventos -->
+        <section class="flex just fwrap">
+            <a href="./pages/evento-tobi.html">
+                <article class="card-eventos">
+                    <div>
+                        <img class="imgcard" src="./multimedia/el-tobi.jpg" alt="foto de el tobi">
+                        <h3 class="padtop10 text-truncate textcard fs-5 fw-semibold">Eres Basura</h3>
+                    </div>
+                    <div>
+                        <div class="division marbott10"></div>
+                        <h4 class="padding10 fs-6">Fecha 12/12/2023</h4>
+                        <h4 class="padding10 fs-6"><strong>Desde</strong> S/.399.33</h4>
+                        <button class="botonverde">Comprar</button>
+                    </div>
+                </article>
+            </a>
+            <article class="card-eventos">
+                <div>
+                    <img class="imgcard" src="./multimedia/hablando-huevadas.jpeg" alt="foto de hablando huevadas">
+                    <h3 class="padtop10 text-truncate textcard fs-5 fw-semibold">Hablando Huevadas T22</h3>
+                </div> 
+                <div>
+                    <div class="division marbott10"></div>
+                    <h4 class="padding10 fs-6">Fecha 12/12/2023</h4>
+                    <h4 class="padding10 fs-6"><strong>Desde</strong> S/.399.33</h4>
+                    <a href="./pages/evento-hh.html"><button class="botonverde">Comprar</button></a>
+                </div>
+            </article>
+            <article class="card-eventos">
+                <div>
+                    <img class="imgcard" src="./multimedia/franco-escamilla.jpg" alt="foto de franco escamilla">
+                    <h3 class="padtop10 text-truncate textcard fs-5 fw-semibold">Franco escamilla en Peru</h3>
+                </div>                    
+                <div>
+                    <div class="division marbott10"></div>
+                    <h4 class="padding10 fs-6">Fecha: 12/12/2023</h4>
+                    <h4 class="padding10 fs-6"><strong>Desde</strong> S/.399.33</h4>
+                    <a href="./pages/404.html"><button class="botonverde">Comprar</button></a>
+                </div>
+            </article>
+            <article class="card-eventos">
+                <div>
+                    <img class="imgcard" src="./multimedia/grids.png" alt="foto de natalia lafurcade">
+                    <h3 class="padtop10 text-truncate textcard fs-5 fw-semibold">Ejemplo de Grids</h3>
+                </div>                    
+                <div>
+                    <div class="division marbott10"></div>
+                    <h4 class="padding10 fs-6">Fecha: Click en el boton ⬇️</h4>
+                    <h4 class="padding10 fs-6"><strong>Desde</strong> ⬇️⬇️⬇️⬇️⬇️⬇️⬇️</h4>
+                    <a href="./pages/noticias.html" target="_blank"><button class="botonverde">ACA</button></a>
+                </div>
+            </article>
+            <article class="card-eventos">
+                <div>
+                    <img class="imgcard" src="./multimedia/el-tobi.jpg" alt="foto de el tobi">
+                    <h3 class="padtop10 text-truncate textcard fs-5 fw-semibold">Eres Basura</h3>
+                </div>                    
+                <div>
+                    <div class="division marbott10"></div>
+                    <h4 class="padding10 fs-6">Fecha 12/12/2023</h4>
+                    <h4 class="padding10 fs-6"><strong>Desde</strong> S/.399.33</h4>
+                    <button class="botonverde">Comprar</button>
+                </div>
+            </article>
+            <article class="card-eventos">
+                <div>
+                    <img class="imgcard" src="./multimedia/hablando-huevadas.jpeg" alt="foto de hablando huevadas">
+                    <h3 class="padtop10 text-truncate textcard fs-5 fw-semibold">Hablando Huevadas T22</h3>
+                </div>                    
+                <div>
+                    <div class="division marbott10"></div>
+                    <h4 class="padding10 fs-6">Fecha 12/12/2023</h4>
+                    <h4 class="padding10 fs-6"><strong>Desde</strong> S/.399.33</h4>
+                    <button class="botonverde">Comprar</button>
+                </div>
+            </article>
+            <article class="card-eventos">
+                <div>
+                    <img class="imgcard" src="./multimedia/franco-escamilla.jpg" alt="foto de franco escamilla">
+                    <h3 class="padtop10 text-truncate textcard fs-5 fw-semibold">Franco escamilla en Peru</h3>
+                </div>                    
+                <div>
+                    <div class="division marbott10"></div>
+                    <h4 class="padding10 fs-6">Fecha 12/12/2023</h4>
+                    <h4 class="padding10 fs-6"><strong>Desde</strong> S/.399.33</h4>
+                    <button class="botonverde">Comprar</button>
+                </div>
+            </article>
+            <article class="card-eventos">
+                <div>
+                    <img class="imgcard" src="./multimedia/natalia-lafurcade.jpg" alt="foto de natalia lafurcade">
+                    <h3 class="padtop10 text-truncate textcard fs-5 fw-semibold">Hasta la Raiz</h3>
+                </div>                    
+                <div>
+                    <div class="division marbott10"></div>
+                    <h4 class="padding10 fs-6">Fecha 12/12/2023</h4>
+                    <h4 class="padding10 fs-6"><strong>Desde</strong> S/.399.33</h4>
+                    <button class="botonverde">Comprar</button>
+                </div>
+            </article>
+            <article class="card-eventos">
+
+                    <img class="imgcard" src="./multimedia/el-tobi.jpg" alt="foto de el tobi">
+                    <h3 class="padtop10 text-truncate textcard fs-5 fw-semibold">Eres Basura</h3>
+                </div>                    
+                <div>
+                    <div class="division marbott10"></div>
+                    <h4 class="padding10 fs-6">Fecha 12/12/2023</h4>
+                    <h4 class="padding10 fs-6"><strong>Desde</strong> S/.399.33</h4>
+                    <button class="botonverde">Comprar</button>
+                </div>
+            </article>
+            <article class="card-eventos">
+                <div>
+                    <img class="imgcard" src="./multimedia/hablando-huevadas.jpeg" alt="foto de hablando huevadas">
+                    <h3 class="padtop10 text-truncate textcard fs-5 fw-semibold">Hablando Huevadas T22</h3>
+                </div>                    
+                <div>
+                    <div class="division marbott10"></div>
+                    <h4 class="padding10 fs-6">Fecha 12/12/2023</h4>
+                    <h4 class="padding10 fs-6"><strong>Desde</strong> S/.399.33</h4>
+                    <button class="botonverde">Comprar</button>
+                </div>
+            </article>  
+            <article class="card-eventos">
+                <div>
+                    <img class="imgcard" src="./multimedia/franco-escamilla.jpg" alt="foto de franco escamilla">
+                    <h3 class="padtop10 text-truncate textcard fs-5 fw-semibold">Franco escamilla en Peru</h3>
+                </div>                    
+                <div>
+                    <div class="division marbott10"></div>
+                    <h4 class="padding10 fs-6">Fecha 12/12/2023</h4>
+                    <h4 class="padding10 fs-6"><strong>Desde</strong> S/.399.33</h4>
+                    <button class="botonverde">Comprar</button>
+                </div>
+            </article>
+        </section>
+        <!-- Mapa -->
+        <div>
+            <h2 class="textocentrado texblanco martop25">Encuentranos</h2>
+            <div class="flex falitcenter just widp100">
+                <iframe
+                    class="redondo10 margin25"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249744.04473505853!2d-77.15258802774115!3d-12.026254178774883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f619ee3ec7%3A0x14206cb9cc452e4a!2sLima!5e0!3m2!1ses-419!2spe!4v1694111404727!5m2!1ses-419!2spe"
+                    width="100%" height="600" style="border:10;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <a href="#arriba" class="flex just marbott25"><button class="botongn"> 🔼 Ir arriba 🔼 </button></a>
+        </div>
+    </main>
+
+    <footer id="Footer">
+        <div class="division"></div>
+        <div id="footdiv" class="flex fdirrow falitcenter justevenly widp100">
+
+            <!-- Logo -->            
+            <a href="#arriba"><img class="margin25" src="./multimedia/logo-footer.png" alt="logo de la empresa" width="180px"></a>
+
+            <!-- Enlaces -->
+            <div class="flex fdirrow">
+                <div class="textocentrado marright25">
+                    <a class="texblanco" href="./pages/sobre-nosotros.html">Sobre nosotros</a><br>
+                    <a class="texblanco" href="./pages/faq.html">Preguntas frecuentes</a><br>
+                    <a class="texblanco" href="./pages/nuevo-evento.html">¿Tienes un Evento?</a><br>
+                </div>
+                <div class="textocentrado marleft25">
+                    <a class="texblanco" href="./pages/contacto.html">Contacto</a><br>
+                    <a class="texblanco" href="./pages/politicas.html">Politicas de Privacidad</a><br>
+                    <a class="texblanco" href="./pages/terminos.html">Terminos y Condiciones</a><br>
+                </div>
+            </div>
+            
+            <!-- Redes -->
+            <div class="flex falitcenter margin10">
+                <img class="margin10" src="./multimedia/iconos/face.svg" alt="logo de Facebook">
+                <img class="margin10" src="./multimedia/iconos/insta.svg" alt="logo de Instagram">
+                <img class="margin10" src="./multimedia/iconos/link.svg" alt="logo de Linkedin">
+                <img class="margin10" src="./multimedia/iconos/wsp.svg" alt="logo de whatsapp">
+            </div>
+        </div>
+        <p class="texblanco padbott10">©️ Todos los derechos reservados 2023</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

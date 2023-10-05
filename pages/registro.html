@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../styles/estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Entrada YA!</title>
+</head>
+
+<body class="gridfull">
+    <header>
+      <nav id="nav" class="flex justevenly widp100">
+      
+        <!-- Logo -->
+        <div class="flex justbetween falitcenter">
+          <a href="../index.html"><img id="logo-header" src="../multimedia/logo-header.png" alt="Logo de la empresa"></a>
+        </div>
+      </nav>
+    </header>
+    
+    <main class="margin25 d-flex justify-content-center">
+      <div class="card col-sm-10 col-md-8 col-lg-6 col-xl-4">
+        <form class="card-body">
+          <!-- Titulo  -->
+          <div class="mb-3">
+            <p class="fs-2 text-center fw-bold">¡Registrate en EntradaYa!</p>
+          </div>
+          <!-- Formulario -->
+          <div class="mb-3">
+            <label class="form-label">Nombres</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Apellidos</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Numero de Telefono</label>
+            <input type="number" class="form-control" placeholder="+51 999 999 999" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Fecha de Nacimiento</label>
+            <input type="date" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" required>
+            <p class="form-text">
+              Su contraseña debe tener entre 8 y 20 caracteres, contener letras y números, y no debe contener espacios, caracteres especiales ni emoji.
+            </p>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Repite la Contraseña</label>
+            <input type="password" class="form-control" required>
+          </div>
+          <!-- Termino y Publicidad -->
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input">
+            <label class="form-text">Autorizo que me envíe información sobre eventos y/o promociones que ofrece, así como encuestas.</label>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" required>
+            <label class="form-text">Acepto los <a class="text-decoration-underline" href="./terminos.html">terminos y Condiciones</a></label>
+          </div>
+          <!-- Botones -->
+          <div class="mb-3 text-center">                  
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+            <div class="form-text martop25">Nunca compartiremos su información personal con nadie más.</div>
+          </div>
+        
+        </form>
+      </div>
+    
+    </main>
+  
+    <footer>
+        <div class="division"></div>
+        <div id="footdiv" class="flex fdirrow falitcenter justevenly widp100">
+
+            <!-- Logo -->
+            <a href="../index.html"><img class="margin25" src="../multimedia/logo-footer.png" alt="logo de la empresa" width="180px"></a>
+            
+            <!-- Enlaces -->
+            <div class="flex fdirrow">
+                <div class="textocentrado marright25">
+                    <a class="texblanco" href="../pages/sobre-nosotros.html">Sobre nosotros</a><br>
+                    <a class="texblanco" href="../pages/faq.html">Preguntas frecuentes</a><br>
+                    <a class="texblanco" href="../pages/nuevo-evento.html">¿Tienes un Evento?</a><br>
+                </div>
+                <div class="textocentrado marleft25">
+                    <a class="texblanco" href="../pages/contacto.html">Contacto</a><br>
+                    <a class="texblanco" href="../pages/politicas.html">Politicas de Privacidad</a><br>
+                    <a class="texblanco" href="../pages/terminos.html">Terminos y Condiciones</a><br>
+                </div>
+            </div>
+
+            <!-- Redes -->
+            <div class="flex falitcenter margin10">
+                <img class="margin10" src="../multimedia/iconos/face.svg" alt="logo de Facebook">
+                <img class="margin10" src="../multimedia/iconos/insta.svg" alt="logo de Instagram">
+                <img class="margin10" src="../multimedia/iconos/link.svg" alt="logo de Linkedin">
+                <img class="margin10" src="../multimedia/iconos/wsp.svg" alt="logo de whatsapp">
+            </div>
+        </div>
+        <p class="texblanco padbott10">©️ Todos los derechos reservados 2023</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

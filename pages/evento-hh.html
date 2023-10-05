@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <title>Entrada YA!</title>
+</head>
+ 
+<body class="gridfull">
+    <header>
+        <nav id="nav" class="flex justevenly widp100">
+
+            <!-- Logo -->
+            <div class="flex justbetween falitcenter">
+                <a href="../index.html"><img id="logo-header" src="../multimedia/logo-header.png" alt="Logo de la empresa"></a>
+            </div>   
+
+            <!-- Buscador -->
+            <div id="busdrop" class="flex falitcenter just">
+                <input class="buscador" type="text" placeholder="Buscar...">
+                <button class="boton-buscador">Buscar</button>
+
+                <!-- Categorias -->
+                <select id="cat-hd" class="marleft10 select135" name="Categorias">
+                    <option value="Categoria1">Categorias</option>
+                    <option value="Categoria2">Stand up</option>
+                    <option value="Categoria3">Concierto</option>
+                    <option value="Categoria4">Recreacion</option>
+                    <option value="Categoria5">Comedia</option>
+                </select>    
+                <!-- Menu hamburgesa -->
+                <div class="dropdown">                                    
+                    <a data-bs-toggle="dropdown" ><img class="menu-1200" src="../multimedia/iconos/menu.svg" alt="menu"></a>                  
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item text-center" href="../pages/login.html">Iniciar Sesion</a></li>
+                          <li><a class="dropdown-item text-center" href="../pages/registro.html">Registrate</a></li>
+                        </ul>
+                </div>
+            </div>
+
+            <!-- Login -->
+            <div id="log" class="flex falitcenter">
+                <a class="marright10" href="../pages/login.html"><button class="botonlog">Iniciar sesion</button></a>
+                <a href="../pages/registro.html"><button class="botonreg">Registrate</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="fondoblanco">
+        <div id="eve750" class="flex falitcenter just falitstar">
+
+            <div class="wid800 padding25 fondoplomo">
+                <!-- Imagen -->
+                <img class="imgp100" src="../multimedia/evento-hh.jpeg" alt="logo del evento">
+                <!-- Compartir -->
+                <div class="textoizquierda marbott25">  
+                    <div class="texnegro"> Compartelo: </div>
+                    <img class="marleft10 martop10" width="30px" src="../multimedia/iconos/face-bk.svg" alt="logo de Facebook">
+                    <img class="marleft10 martop10" width="30px" src="../multimedia/iconos/insta-bk.svg" alt="logo de Instagram">
+                    <img class="marleft10 martop10" width="30px" src="../multimedia/iconos/wsp-bk.svg" alt="logo de Whatsapp">
+                </div>
+                <!-- Informacion y conocer mas -->
+                <div class="flex fdircolum falitcenter">
+                    <h1 class="texnegro fs-2 fw-semibold">Hablando Huevadas T12 E5</h1>
+                    <p class="texnegro marbott25 fs-6">Los comediantes Jorge Luna y Ricardo Mendoza son los responsables detrás de “Hablando Huevadas”, un programa de comedia que es un auténtico boom entre la nueva generación. Sus shows en vivo, que mezclan conversación, improvisación y chacota, ya están agotados hasta febrero.</p>
+                    <h2 class="martop25 oculto750 fs-2 fw-semibold">Conocelos mas !</h2>
+                    <iframe class="imgp100YT oculto750" src="https://www.youtube.com/embed/E646yAAcoqk?si=LTfSYrjvGT--mdl4" 
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>            
+
+            <div class="wid400 padding25">
+                <!-- Card Menu de seleccion -->
+                <form class="card-compra padding25">
+                    <h2 class="marbott25 fw-semibold fs-4">Hablando Huevadas T12 E5</h2>
+                    <h4 class="fs-6">Fecha: 12/12/2023</h4>                    
+                    <h4 class="fs-6">Hora: 19:59</h4>
+                    <h4 class="marbott25 martop25 fs-6">Ciudad: Lima, Peru</h4>
+                    <select class="widp100 select100p textocentrado fs-5 marbott25" name="Categorias">
+                        <option value="Categoria1">General  S/299.99</option>
+                        <option value="Categoria2">Platino  S/199.99</option>
+                        <option value="Categoria3">Vip 1    S/99.99</option>
+                        <option value="Categoria4">Vip 2    S/49.99</option>
+                    </select>
+                    <a href="../pages/404.html"><button class="botonverde" type="button">Comprar</button></a>
+                    <p class="texnegro martop25"><input type="checkbox"> Acepto terminos y condiciones</p>
+                    <p class="texplomo texto13">*Este Show solo es +18, menores de edad no seran admitidos</p>
+                </form>
+                <!-- Card mapa -->
+                <div>
+                    <div class="card-compra redondotop10 martop25 padding25">
+                        <h3 class="fw-semibold fs-4">Ubicaion del Evento</h3>
+                        <h4 class="fs-6">Teatro Canut</h4>
+                        <h5 class="fs-6">Av. Petit Thouars 4550, Miraflores 15046</h5>
+                    </div>
+                    <iframe class="card-compra redondobott10" width="100%" height="400"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.0596512135794!2d-77.03252792401204!3d-12.108068943047089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c814d256b34b%3A0xb4b89a218147c8d3!2sTeatro%20Canout!5e0!3m2!1ses-419!2spe!4v1694265158548!5m2!1ses-419!2spe"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="division"></div>
+        <div id="footdiv" class="flex fdirrow falitcenter justevenly widp100">
+
+            <!-- Logo -->            
+            <a class="margin25" href="../index.html"><img src="../multimedia/logo-footer.png" alt="logo de la empresa" width="180px"></a>
+
+            <!-- Enlaces -->
+            <div class="flex fdirrow">
+                <div class="textocentrado marright25">
+                    <a class="texblanco" href="../pages/sobre-nosotros.html">Sobre nosotros</a><br>
+                    <a class="texblanco" href="../pages/faq.html">Preguntas frecuentes</a><br>
+                    <a class="texblanco" href="../pages/nuevo-evento.html">¿Tienes un Evento?</a><br>
+                </div>
+                <div class="textocentrado marleft25">
+                    <a class="texblanco" href="../pages/contacto.html">Contacto</a><br>
+                    <a class="texblanco" href="../pages/politicas.html">Politicas de Privacidad</a><br>
+                    <a class="texblanco" href="../pages/terminos.html">Terminos y Condiciones</a><br>
+                </div>
+            </div>
+            
+            <!-- Redes -->
+            <div class="flex falitcenter margin10">
+                <img class="margin10" src="../multimedia/iconos/face.svg" alt="logo de Facebook">
+                <img class="margin10" src="../multimedia/iconos/insta.svg" alt="logo de Instagram">
+                <img class="margin10" src="../multimedia/iconos/link.svg" alt="logo de Linkedin">
+                <img class="margin10" src="../multimedia/iconos/wsp.svg" alt="logo de whatsapp">
+            </div>
+        </div>
+        <p class="texblanco padbott10">©️ Todos los derechos reservados 2023</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
